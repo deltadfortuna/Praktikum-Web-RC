@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout dengan CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            margin: 100px auto;
+            border: 2px solid black;
+            width: 700px;
+            height: auto;
+        }
+
+        .jarak{
+            border: 5px solid black;
+        }
+
+        header{
+            background-color: darkorange;;
+            height: 150px;
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p{
+          background-color: darkorange;
+          text-align: center;
+          font-size: 15px;
+        }
+
+        nav{
+            background-color: darkred;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10pt;
+        }
+
+        .body{
+            display: flex;
+            height: auto;
+            width: auto;
+            height: 350px;
+        }
+
+        .sideBar{
+            background-color: green;
+            width: 30%;
+            justify-content: center;
+        }
+
+        .mainContent{
+            background-color: lightgrey;
+
+            width: 70%;
+            justify-content: center;
+
+        }
+
+        footer{
+            background-color: grey;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jarak">
+
+        <header>
+
+            <center>
+            <img src="ITERA.png"
+                 alt="foto ITERA"
+                 style="width:125px; height: 125px;" >
+            </center>
+            <p>
+            <b> INSTITUT TEKNOLOGI SUMATERA </b>
+            </p>
+        </header>
+            </div>
+
+        <div class="jarak">
+        <nav>
+            <b>
+                <a href="home">home | </a>
+                <a href="contact">contact | </a>
+                <a href="about">about | </a>
+                <a href="recommendation"> recommendation</a>
+            </b>
+        </nav>
+        </div>
+
+        <div class="jarak">
+        <div class="body">
+
+            <div class="mainContent">
+                <center>
+                    <br>
+                 <img src="myphoto.jpg"
+                      alt="foto delta"
+                      style="width:100px; height: 130px;">
+                </center>
+                    <br>
+                Nama : Delta Dewi Fortuna<br>
+                    Tempat, Tanggal Lahir : Lampung Tengah, 17 Oktober 2001 <br>
+                    Jenis Kelamin : Perempuan <br>
+                    Agama : Islam <br>
+                    Alamat : Desa Margomulyo, Kec. Tegineneng. Kab. Pesawaran, Lampung <br>
+                    Nomor Telepon: 082282557311 <br>
+                    Alamat Email: delta.119140184@student.itera.ac.id
+            </div>
+
+
+                       <div class="sideBar">
+                <a href="https://www.ruangguru.com/blog/cara-belajar-efektif"> Tips Belajar Anti Capek </a> <br> <br>
+                <a href="http://p2ptm.kemkes.go.id/foto-p2ptm/tips-agar-tetap-sehat-di-masa-pandemi-covid-19"> Tips Sehat di Masa Pandemi </a> <br> <br>
+                <a href="https://www.cimbniaga.co.id/id/inspirasi/perencanaan/cara-menabung-yang-benar-menurut-pakar-keuangan">Tips Menabung</a> <br> <br>
+                <a href="https://jabar.idntimes.com/hype/fun-fact/abraham-herdyanto/tokoh-sukses-dalam-sejarah-yang-ternyata-intovert-regional-jabar"> Mengenal Tokoh Penting Dunia</a>
+            </div>
+
+
+            </div>
+            </div>
+
+            <div class="jarak">
+            <footer><b>
+               119140184 - Delta Dewi Fortuna
+            </b></footer>
+            </div>
+
+    </div>
+<hr>
+Nama: Delta Dewi Fortuna <br>
+NIM: 119140184
+</body>
+</html>
