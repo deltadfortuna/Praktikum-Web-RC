@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    <style>
+        h1{
+        font-size: 28px;
+        text-align : center;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <p>
+        Select Theme  <button> change color </button>
+    <p id="colorC"></p>
+</div>
+
+<script>
+    const button = document.querySelector('button')
+    const body = document.querySelector('body')
+
+    var colors= ['white','yellow','red','blue','violet','pink', 'grey', 'orange']
+    changeColor()
+
+    function changeColor(){
+       var colorIndex = parseInt(Math.random()*colors.length)
+       body.style.backgroundColor = colors[colorIndex]
+       var warna = colors[colorIndex]
+       document.getElementById('colorC').innerHTML= "The theme now is " + colors[colorIndex]
+       }
+       button.addEventListener('click', changeColor)
+</script>
+
+    <fieldset>
+        <h1> ~Welcome! This is My Website~ </h1>
+    </fieldset>
+    <br>
+    <fieldset>
+        Hello! My name is Delta Dewi Fortuna. My student id number is 119140184.<br>
+        I wanna to be a good programmer. I hope in this semester my achievement index can increases.<br>
+        Thank you ^^ <br>
+    </fieldset>
+    <br>
+
+    Select the weather type today:
+    <select name="weather" id="weather" onchange="cuaca()">
+        <option value="dry">dry</option>
+        <option value="rainy">rainy</option>
+    </select>
+    <p id="cuaca2"></p>
+
+    <script>
+        function cuaca(){
+            var jenismusim=document.getElementById("weather");
+
+            if(jenismusim.value=="dry"){
+                var cuaca=document.getElementById("cuaca2");
+                cuaca.innerText = "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get a ice cream";
+            }else if(jenismusim.value="rainy"){
+                var cuaca=document.getElementById("cuaca2");
+                cuaca.innerText = "Today is rain. Don't forget to bring umbrella or raincoat!";
+            }
+        }
+    </script>
+
+    Input number:
+    <input type="number" name="angka" id="faktorial2">
+    <button type="submit" onclick="faktorial()">Get Factorial</button>
+
+    <script>
+        function faktorial(){
+            var faktor = document.getElementById("faktorial2");
+
+              let hasil = 1;
+              if (faktor.value == 0){
+                hasil = 0;
+              }else if(faktor.value == 1){
+                  hasil=1;
+              }else{
+                for(var i = faktor.value; i >= 1; i--){
+                  hasil = hasil * i;
+                }
+              }
+
+            var result = document.getElementById("hasil");
+                result.innerText = "The Factorial is " + hasil;
+        }
+    </script>
+    <p id="hasil"></p>
+
+</body>
+</html>
