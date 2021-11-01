@@ -20,7 +20,7 @@
             <th>Nama</th>
             <th>Prodi</th>
             <th>Angkatan</th>
-            <th colspan="2">Tindakan</th>
+            <th colspan="2"></th>
         </tr>
 
     <?php
