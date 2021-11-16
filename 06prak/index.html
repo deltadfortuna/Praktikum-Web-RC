@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>119140184</title>
+    <style>
+
+        h1{
+            background-color: rgb(143, 188, 144);
+        }
+
+        button{
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            background-color: rgb(222, 184, 135);
+        }
+
+        button:hover {
+            background-color: rgb(168, 235, 91);
+        }
+
+        form {
+            width: 700px;
+            margin: auto;
+        }
+
+        legend {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        fieldset {
+            background-color: rgb(189, 183, 107);
+            margin-top: 15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <center><h1>==Selamat Datang==</h1>
+              Hallo, selamat datang di AlfaTera~ <br>
+            Hidup sehat diawali dengan makan buah! <br>
+            Barang yang tersedia saat ini adalah:<br>
+            1. Buah Mangga, harga Rp 15000/kg <br>
+            2. Buah Jambu, harga Rp 13000/kg <br>
+            3. Buah Salah, harga Rp 10000/kg <br>
+            Selamat berbelanja~ <br> <br>
+
+            *Note: minimal belanja adalah 1 kg perbuah!
+        </center>
+
+    </div>
+    <fieldset>
+    <form action="total.php" method="POST">
+        <fieldset>
+            <legend>KERANJANG</legend>
+            <center>
+            <table>
+                <tr>
+                    <td>Mangga  </td>
+                    <td><input type="number" id="mangga" name="mangga" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
+                </tr>
+                <tr>
+                    <td>Jambu  </td>
+                    <td><input type="number" id="jambu" name="jambu" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
+                </tr>
+                <tr>
+                    <td>Salak </td>
+                    <td><input type="number" id="salak" name="salak" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type="number" id="total" name="total" readonly></td>
+                </tr>
+            </table>
+
+            <button type="submit">Checkout</button>
+            </center>
+           </fieldset>
+    </form>
+    </fieldset>
+    <script>
+        function setValue(){
+            var mangga = document.getElementById("mangga").value * 15000;
+            var jambu = document.getElementById("jambu").value * 13000;
+            var salak = document.getElementById("salak").value * 10000;
+            var hasil = mangga + jambu + salak;
+            var total = document.getElementById("total");
+            total.value = hasil;
+        }
+    </script>
+</body>
+</html>
