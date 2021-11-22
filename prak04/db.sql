@@ -39,7 +39,7 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`nim`, `nama`, `prodi`, `angkatan`) VALUES
-(119140110, 'Aulia Rahman Zulfi', 'Teknik Informatika', 2019),
+(119140110, 'Delta Dewi Fortuna', 'Teknik Informatika, '2019'),
 (119140433, 'Lilas Ikuta', 'Teknik Elektro', 2018),
 (119140342, 'Erika', 'Teknik Mesin', 2020);
 COMMIT;
