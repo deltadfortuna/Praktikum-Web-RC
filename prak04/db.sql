@@ -38,11 +38,6 @@ CREATE TABLE `mahasiswa` (
 -- Dumping data for table `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`nim`, `nama`, `prodi`, `angkatan`) VALUES
-(119140110, 'Delta Dewi Fortuna', 'Teknik Informatika, '2019'),
-(119140433, 'Lilas Ikuta', 'Teknik Elektro', 2018),
-(119140342, 'Erika', 'Teknik Mesin', 2020);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
